@@ -20,10 +20,10 @@ public class SpringRetryApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// Default
-		myJob.defaultRetry(true);
+//		myJob.defaultRetry(true);
 
 		// Custom
-		myJob.customRetry(true);
+//		myJob.customRetry(true);
 
 		var response = myJob.useRetryTemplate(true);
 		log.info(response);

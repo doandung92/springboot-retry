@@ -48,6 +48,7 @@ public class MyJob {
                     return "Success";
                 },
                 recoveryCallback -> {
+                    log.info("Recovery called");
                     return "Recovering";
                 }
         );
